@@ -105,10 +105,10 @@ const config = (node, min, esm = false) => ({
     file: esm
       ? './dist/svg.esm.js'
       : node
-      ? './dist/svg.node.cjs'
-      : min
-      ? './dist/svg.min.js'
-      : './dist/svg.js',
+        ? './dist/svg.node.cjs'
+        : min
+          ? './dist/svg.min.js'
+          : './dist/svg.js',
     format: esm ? 'esm' : node ? 'cjs' : 'iife',
     name: 'SVG',
     sourcemap: true,
